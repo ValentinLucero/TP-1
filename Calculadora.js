@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 
 
 function menuNumero2(num1){
-    console.log("Seleccione el numero de la operacion: ");
+    console.log("Seleccione la operacion: ");
     console.log("1. Suma");
     console.log("2. Resta");
     console.log("3. Multiplicacion");
@@ -126,7 +126,7 @@ function division(num1, num2){
 const main = function (){
     console.log("Bienvenido a la calculadora");
 
-    rl.question("Ingrese el numero que le hara una operacion ", (num1) =>{
+    rl.question("Ingrese el primer numero para la operacion ", (num1) =>{
         num1 = parseFloat(num1);
 
         if (isNaN(num1)){
@@ -142,14 +142,3 @@ const main = function (){
 
 
 main();
-
-
-
-
-
-
-
-
-
-
-
