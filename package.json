@@ -1,13 +1,13 @@
 {
   "name": "tp-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trabajo Práctico 1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Valentin Lucero",
   "license": "ISC",
   "type": "commonjs"
 }
