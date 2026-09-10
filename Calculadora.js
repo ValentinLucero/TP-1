@@ -84,8 +84,7 @@ function menuNumero2(num1){
                 rl.close();
                 break; 
         };            
-    }
-    );
+    });
 }
 
 function suma(num1, num2){
