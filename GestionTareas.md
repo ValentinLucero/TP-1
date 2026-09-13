@@ -13,7 +13,7 @@ Implementamos una solución basada en recursividad, utilizando funciones que se 
 En lugar de usar bucles tradicionales (como while), el flujo del programa se mantiene activo mediante funciones como bloqueTrabajo, que se invocan nuevamente después de cada acción del usuario. Esto permite simular un ciclo continuo de ejecución sin bloquear el programa.
 
 # Funcionalidades principales
-- Creación de tareas
+- Creación de tareas 
 - Búsqueda de tareas
 - Edición de tareas
 - Cambio de estado
