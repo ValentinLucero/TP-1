@@ -24,7 +24,7 @@ function menuBuscar(){
 }
 
 
-function editar (tarea ,tareas , ESTADOS , DIFICULTADES){
+function editar (tarea ,tareas , ESTADOS , DIFICULTADES){ //para modificar una tarea existente
     console.log(`ESTA EDITANDO LA TAREA ${tarea.titulo}\n`);
 
     console.log("Que desea modificar ? \n\n");
@@ -67,7 +67,7 @@ function editar (tarea ,tareas , ESTADOS , DIFICULTADES){
                 case 2 : 
                     
                     console.log(`los estados disponibles son` )
-                    for ( i = 0 ; ESTADOS[i] != undefined ; i++){
+                    for ( let i = 0 ; ESTADOS[i] != undefined ; i++){
 
                         console.log(`[${i+1}] ${ESTADOS[i]}`)
 
@@ -365,7 +365,7 @@ const bloqueTrabajo = function (tareas, ESTADOS, DIFICULTADES){
 
 main = function (){
 
-    let tareas = []; //arreglo el cual contiene las tareas
+    let tareas = []; //arreglo el cual contiene las tareas (array de objetos)
 
     const ESTADOS = ['pendiente', 'en curso', 'terminada', 'cancelada']; // arreglo de estados
     
