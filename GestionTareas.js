@@ -278,9 +278,10 @@ const bloqueTrabajo = function (tareas, ESTADOS, DIFICULTADES){
     rl.question("Ingrese una opcion: ", (opcion) =>{
        opcion = parseInt(opcion);
 
-       if (typeof opcion !== 'number'){
+        if (isNaN(opcion)){
         console.log("Opcion no valida");
         bloqueTrabajo(tareas , ESTADOS, DIFICULTADES);
+        return
        }
 
         switch(opcion){
@@ -301,7 +302,8 @@ const bloqueTrabajo = function (tareas, ESTADOS, DIFICULTADES){
                     opcion = parseInt(opcion);
                     if (opcion < 1 || opcion > 6){
                         console.log("Opcion no valida");
-                        bloqueTrabajo(tareas , ESTADOS, DIFICULTADES);    
+                        bloqueTrabajo(tareas , ESTADOS, DIFICULTADES);
+                        return;    
                     }
                     if(opcion == 1){
                             titulosTareas(tareas , "todas", ESTADOS, DIFICULTADES);
