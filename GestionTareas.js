@@ -106,16 +106,18 @@ function editar (tarea ,tareas , ESTADOS , DIFICULTADES){ //para modificar una t
 
                     rl.question("Elija la dificultad ", (newDificulty) => {
 
-                        if(isNaN(newDificulty) || (newDificulty < 0 || newDificulty > 3 ) ){
+                        if(isNaN(newDificulty) || (newDificulty < 1 || newDificulty > 3)){
 
                         console.log("Volviendo al menu de edicion");
 
                         editar(tarea, tareas , ESTADOS , DIFICULTADES);
 
+                        return;
+
                         }
                         else{
 
-                            tarea.dificultad = DIFICULTADES[newDificulty];
+                            tarea.dificultad = parseInt(newDificulty);
 
                             console.log("Volviendo al menu principal");
 
