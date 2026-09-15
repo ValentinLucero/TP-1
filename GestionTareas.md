@@ -1,6 +1,6 @@
 # Proyecto Gestor de Tareas
 
-Este proyecto fue desarrollado como Trabajo Práctico para la materia, representando nuestros primeros pasos en JavaScript.
+Este proyecto fue desarrollado como Trabajo Práctico para la materia, representando mis primeros pasos en JavaScript.
 
 Fecha: 14/09/2026
 
@@ -8,7 +8,7 @@ Fecha: 14/09/2026
 Aplicación de consola en JavaScript que permite gestionar tareas. El sistema permite crear, buscar, modificar y cambiar el estado de distintas tareas mediante un menú interactivo.
 
 # Contexto del trabajo
-Implementamos una solución basada en recursividad, utilizando funciones que se vuelven a llamar a sí mismas dentro de los callbacks de readline.
+Implemente una solución basada en recursividad, utilizando funciones que se vuelven a llamar a sí mismas dentro de los callbacks de readline.
 
 En lugar de usar bucles tradicionales (como while), el flujo del programa se mantiene activo mediante funciones como bloqueTrabajo, que se invocan nuevamente después de cada acción del usuario. Esto permite simular un ciclo continuo de ejecución sin bloquear el programa.
 
